@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textVCandidato3"
+        android:layout_width="103dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/butContarV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/butCandidato3"
+        app:layout_constraintTop_toBottomOf="@+id/textVCandidato2" />
+
+    <TextView
+        android:id="@+id/textVCandidato2"
+        android:layout_width="103dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textVCandidato3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/butCandidato2"
+        app:layout_constraintTop_toBottomOf="@+id/textVCandidato1" />
+
+    <Button
+        android:id="@+id/butSalir"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="37dp"
+        android:onClick="cerrar"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textVGanador"
+        app:layout_constraintTop_toBottomOf="@+id/butContarV" />
+
+    <Button
+        android:id="@+id/butCandidato3"
+        android:layout_width="202dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="candidatos3"
+        android:text="Candidato 3"
+        app:layout_constraintBottom_toTopOf="@+id/textVGanador"
+        app:layout_constraintEnd_toStartOf="@+id/textVCandidato2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butCandidato2" />
+
+    <Button
+        android:id="@+id/butCandidato2"
+        android:layout_width="202dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="candidatos2"
+        android:text="Candidato 2"
+        app:layout_constraintBottom_toTopOf="@+id/butCandidato3"
+        app:layout_constraintEnd_toStartOf="@+id/textVCandidato2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butCandidato1" />
+
+    <TextView
+        android:id="@+id/textCandidatos"
+        android:layout_width="334dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Candidatos "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/butCandidato1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/butCandidato1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextParticipantes" />
+
+    <EditText
+        android:id="@+id/editTextParticipantes"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textCandidatos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textParticipantes" />
+
+    <TextView
+        android:id="@+id/textBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="Bienvenido al sistema de votacion "
+        android:textColor="#673AB7"
+        android:textColorLink="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/butContarV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="contarVotos"
+        android:text="Conta Votos"
+        app:layout_constraintBottom_toTopOf="@+id/butSalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textVGanador"
+        app:layout_constraintTop_toBottomOf="@+id/textVCandidato3" />
+
+    <Button
+        android:id="@+id/butCandidato1"
+        android:layout_width="202dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="candidatos1"
+        android:text="Candidato 1"
+        app:layout_constraintBottom_toTopOf="@+id/butCandidato2"
+        app:layout_constraintEnd_toStartOf="@+id/textVCandidato1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCandidatos" />
+
+    <TextView
+        android:id="@+id/textParticipantes"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="Cantidad de personas que votaran"
+        android:textColor="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextParticipantes"
+        app:layout_constraintEnd_toStartOf="@+id/textEdad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBienvenido" />
+
+    <EditText
+        android:id="@+id/editTextEdad"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textCandidatos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/editTextParticipantes"
+        app:layout_constraintTop_toBottomOf="@+id/textEdad" />
+
+    <TextView
+        android:id="@+id/textEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:text="Ingrese su edad "
+        android:textColor="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEdad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textParticipantes"
+        app:layout_constraintTop_toBottomOf="@+id/textBienvenido" />
+
+    <TextView
+        android:id="@+id/textVGanador"
+        android:layout_width="209dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:text="El ganador es:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butContarV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butCandidato3" />
+
+    <TextView
+        android:id="@+id/textVCandidato1"
+        android:layout_width="103dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textVCandidato2"
+        app:layout_constraintEnd_toStartOf="@+id/textCandidatos"
+        app:layout_constraintStart_toEndOf="@+id/butCandidato1"
+        app:layout_constraintTop_toBottomOf="@+id/textCandidatos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
